@@ -28,3 +28,8 @@ export const validateLogin = [
   body("password").notEmpty().withMessage("password is required"),
   handleVallidation,
 ];
+
+export const validateForgotPassword = [
+  body("email").notEmpty().withMessage("email is required").isEmail(),
+  handleVallidation,
+];
