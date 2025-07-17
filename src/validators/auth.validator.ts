@@ -33,3 +33,8 @@ export const validateForgotPassword = [
   body("email").notEmpty().withMessage("email is required").isEmail(),
   handleVallidation,
 ];
+
+export const validateResetPassword = [
+  body("email").notEmpty().withMessage("email is required").isEmail(),
+  handleVallidation,
+];
